@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './Quoter.module.css';
 import { calcularTotalPagar } from './Helpers';
-import fondo from '../../Assets/landing.jpg'
+// import fondo from '../../Assets/landing.jpg';
 import NavBar from '../../Components/NavBar/NavBar';
 
 const Button = ({ operador, fn }) => (
@@ -89,7 +89,7 @@ const Quoter = () => {
         <NavBar />
         <div className={styles.quoterContainer}>
             
-            <img src={fondo} className={styles.fondo} alt="fondo" />
+            {/* <img src={fondo} className={styles.fondo} alt="fondo" /> */}
             
         <Header />
 
