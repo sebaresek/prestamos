@@ -178,8 +178,7 @@
 
 
 @media (max-width: 575px) {
-  .body {
-    /* background-image: url(../../Assets/landing.jpg); */
+  /* .body {
       display: flex;
       background-size: cover;
       background-attachment: fixed;
@@ -187,16 +186,15 @@
       margin: 0;
       height: 100vh;
       overflow: hidden;
-  }
-
+  } */
+    /* background-image: url(../../Assets/landing.jpg); */
     
 .quoterContainer {
-  margin-top: 3.5em !important;
+  margin-top: 0em !important;
   max-width: 350px;
-  height:75% ;
+  height: 36em ;
   margin: auto;
   padding: 20px;
-  /* este es f9f9f9ee*/
   background-color: #f9f9f9ee;
   border-radius: 8px;
   box-shadow: 0px 0px 15px rgb(53, 53, 53);
@@ -204,7 +202,7 @@
 
 .paymentSummary {
   background-color: #8099b369;
-  padding: 0px !important;
+  padding: 0.1em !important;
   border-radius: 4px;
   margin-bottom: 20px;
 }
