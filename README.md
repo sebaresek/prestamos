@@ -18,11 +18,11 @@ Este proyecto es un trabajo para un cliente y creado de cero con la idea de pode
 
 ## **⛔️ ATENCIÓN ⛔️**
 
-Creo que es importante que sepas que **`no`** deberias copiar directamente este proyecto si estas con las ganas o necesitdad de crear una pagina web de prestamos personales, pero si te podria ayudar en algun punto especifico.
+Creo que es importante que sepas que **`no`** deberias copiar directamente este proyecto si estas con las ganas o necesidad de crear una pagina web de prestamos personales, pero si te podria ayudar en algun punto especifico.
 
 **👀 What? Why?**
 
-Es importante que entiendas que a veces es mucho mejor buscar en las documentacion oficiales que ofrecen diversas paginas; como ser **`MDN`** u otras.
+Es importante que entiendas que a veces es mucho mejor buscar en las documentacion oficiales que ofrecen diversas paginas web.
 
 <br />
 
