@@ -38,7 +38,8 @@ Mi nombre es Sebastian Resek y espero poder ayudarte en otra ocacion 👋
 
 Si quieres puedes ingresar a ver la pagina, te dejo el link aca a bajo !
 <br /><br />
-https://www.pretamos.online/
+**`https://www.pretamos.online/`**
+
 
 
 Por cualquier duda o consulta contactame! 
