@@ -17,11 +17,11 @@ const Header = () => (
 );
 
 const Quoter = () => {
-  const [cantidad, setCantidad] = useState(25000);
+  const [cantidad, setCantidad] = useState(50000);
   const [dias, setDias] = useState(6);
   const [total, setTotal] = useState(0);
   const MIN = 0;
-  const MAX = 50000;
+  const MAX = 100000;
   const STEP = 1000;
   const inputRangeRef = useRef(null);
   const [renderizadoInicial, setRenderizadoInicial] = useState(true);
