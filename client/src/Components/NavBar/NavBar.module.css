@@ -1,16 +1,25 @@
-.nav{
-    display: flex;
-    justify-content: center;
-    height: 4rem;
-    background-color: transparent;
+.nav {
+  display: flex;
+  justify-content: space-between; /* Cambio para alinear elementos a los extremos */
+  align-items: center;
+  height: 4rem;
+  background-color: transparent;
+  padding-bottom: .5rem;
+}
+
+.nav_money{
+  margin-top: 1.5rem;
+  margin-left: 2.5rem;
+  display: block;
 }
 
 /******************************************************************************/
   
 .buttonContact {
+    background-color: #5c5c5cea!important;
     position: absolute;
-    padding: .7em 1.5em;
-    top: 1.5em;
+    padding: 1em 1.5em;
+    top: 1em;
     right: 2.5em ; ;
     border: 0px solid #ffffff00;
     font-size: 17px;
@@ -20,14 +29,14 @@
     overflow: hidden;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
     border-radius: 1em;
-    background-color: transparent;
+    /* background-color: transparent; */
     font-weight: bolder;
   } 
 
   .buttonContact:hover {
     background-color: #3535358a ;
     border-radius: 1em;
-    color: #fff;
+    color: #000;
   }
     
   .buttonContact:active {
@@ -37,6 +46,7 @@
 /******************************************************************************/
 
 .button {
+    color: #000;
     position: absolute;
     padding: .7em 1.5em;
     top: 1.5em;
@@ -49,14 +59,14 @@
     overflow: hidden;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
     border-radius: 1em;
-    background-color: transparent;
+    /* background-color: transparent; */
     font-weight: bolder;
   } 
 
   .button:hover {
     background-color: #3535358a ;
     border-radius: 1em;
-    color: #fff;
+    color: #000;
   }
     
   .button:active {
@@ -87,41 +97,53 @@
     .nav {
         display: flex;
         justify-content: center;
+        align-items: center;
         height: 4rem;
         background-color: transparent;
+        padding-bottom: 0;
       }
       
 
     .button {
-        position: absolute;
-        padding: .7em 1.5em;
-        top: 1.5em;
-        right: 11em ;
-        font-size: 12px;
-        letter-spacing: 1px;
-        cursor: pointer;
-        overflow: hidden;
-        background-color: transparent;
-        font-weight: bolder;
-      } 
+      display: none;
+    } 
+
       .buttonContact {
         position: absolute;
-        padding: .7em 1.5em;
-        top: 1.5em;
+        padding: 1.1em 1.6em;
+        top: 1.4em;
         right: 1em ; ;
         border: 0px solid #ffffff00;
-        font-size: 12px;
+        background-color: rgba(158, 158, 158, 0.712);
+        font-size: .9rem;
         letter-spacing: 1px;
+        color: white;
+        line-height: 1.334;
         cursor: pointer;
-        overflow: hidden;
-        transition: background-color 0.3s, color 0.3s, transform 0.3s;
         border-radius: 1em;
-        background-color: transparent;
         font-weight: bolder;
+        font-family: 'Poppins', sans-serif;
+        background-color: #5c5c5cea!important;
       }
 
       .icon {
+        color: white;
         margin-left: 4px;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between; /* Cambio para alinear elementos a los extremos */
+        align-items: center;
+        height: 4rem;
+        background-color: transparent;
+        padding-bottom: .5rem;
+      }
+      
+      .nav_money {
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        display: block;
       }
   }
 

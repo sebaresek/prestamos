@@ -12,7 +12,11 @@ const Button = ({ operador, fn }) => (
 
 const Header = () => (
   <h1 className={styles.header}>
-    ¿Cuánto <span className={styles.textIndigo}>dinero</span> necesitas?
+    ¿Cuánto necesitas?
+      {/* <span className={styles.textIndigo}> 
+        dinero
+      </span> 
+    necesitas? */}
   </h1>
 );
 
@@ -38,7 +42,7 @@ const Quoter = () => {
   const updateBackground = (value = cantidad) => {
     const range = inputRangeRef.current;
     const percent = ((value - range.min) / (range.max - range.min)) * 100;
-    const gradient = `linear-gradient(to right, #84cc16 0%, #84cc16 ${percent}%, #d1d5db ${percent}%, #d1d5db 100%)`;
+    const gradient = `linear-gradient(to right, #DA0067 0%, #DA0067 ${percent}%, #d1d5db ${percent}%, #d1d5db 100%)`;
     range.style.background = gradient;
   };
 
@@ -86,16 +90,11 @@ const Quoter = () => {
 
 
     <div className={styles.body} >
-        <NavBar />
-        <div className={styles.quoterContainer}>
-            
-            <img src={fondo} className={styles.fondo} alt="fondo" />
-            
+        <div className={styles.quoterContainer}>            
         <Header />
 
         <div className={styles.buttonsContainer}>
-            <Button operador="-" fn={handleChangeDecremento} />
-            <Button operador="+" fn={handleChangeIncremento} />
+            <p className={styles.totalAmount}>{formatearDinero(cantidad)}</p>
         </div>
 
         <div className={styles.inputContainer}>
@@ -113,7 +112,7 @@ const Quoter = () => {
             ref={inputRangeRef}
             />
 
-            <p className={styles.totalAmount}>{formatearDinero(cantidad)}</p>
+            {/* <p className={styles.totalAmount}>{formatearDinero(cantidad)}</p> */}
 
             <h2 className={styles.plazo}>
             Elige un <span className={styles.textIndigo}>Plazo</span> a pagar

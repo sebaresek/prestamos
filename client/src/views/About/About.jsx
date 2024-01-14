@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className={styles.body}>
         <NavBar/>
-         <img src={fondo} className={styles.fondo} alt="fondo" />
+         {/* <img src={fondo} className={styles.fondo} alt="fondo" /> */}
         <div className={styles.container}>
             <h1 className={styles.title}>Un poco sobre nosotros</h1>
                 <p className={styles.text}>
