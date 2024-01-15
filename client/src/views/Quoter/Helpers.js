@@ -2,7 +2,6 @@ const calcularTotalPagar = (cantidad, plazo) => {
     let total 
 
     //Mientras mayor es la cantidad, menor es el interes
-
     if(cantidad < 5000){
         total = cantidad * 1
     }else if(cantidad >= 5000 && cantidad < 10000){
@@ -20,8 +19,8 @@ const calcularTotalPagar = (cantidad, plazo) => {
         total *= 1.5
     }else if(plazo === 3){
         total *=  2
-    }else{
-        total *= 2.2
+    }else if(plazo === 5){
+        total *= 2.4
     }
     return total
 }

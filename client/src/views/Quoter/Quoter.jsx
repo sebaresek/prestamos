@@ -21,23 +21,27 @@ const Header = () => (
 );
 
 const Quoter = () => {
-  const [cantidad, setCantidad] = useState(50000);
+  const [cantidad, setCantidad] = useState(80000);
   const [dias, setDias] = useState(6);
   const [total, setTotal] = useState(0);
-  const MIN = 0;
-  const MAX = 100000;
+  const MIN = 10000;
+  const MAX = 150000;
   const STEP = 1000;
   const inputRangeRef = useRef(null);
   const [renderizadoInicial, setRenderizadoInicial] = useState(true);
 
   const formatearDinero = (valor) => {
-    const formatter = new Intl.NumberFormat('en-US', {
+    const formatter = new Intl.NumberFormat('es-AR', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'ARS', // Utiliza la moneda local
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,  
     });
-
-    return formatter.format(valor);
+    // Formatea el número y luego reemplaza el símbolo de pesos argentinos con el del dólar
+    return formatter.format(valor).replace(/^ARS/, '$');
   };
+  
+  
 
   const updateBackground = (value = cantidad) => {
     const range = inputRangeRef.current;
@@ -64,31 +68,29 @@ const Quoter = () => {
   }, [renderizadoInicial]);
   
 
-  const handleChangeDecremento = () => {
-    const valor = cantidad - STEP;
-    if (valor < MIN) {
-      alert('Cantidad no válida');
-      return;
-    }
-    setCantidad(valor);
-    updateBackground(valor);
-  };
+  // const handleChangeDecremento = () => {
+  //   const valor = cantidad - STEP;
+  //   if (valor < MIN) {
+  //     alert('Cantidad no válida');
+  //     return;
+  //   }
+  //   setCantidad(valor);
+  //   updateBackground(valor);
+  // };
 
-  const handleChangeIncremento = () => {
-    const valor = cantidad + STEP;
-    if (valor > MAX) {
-      alert('Cantidad no válida');
-      return;
-    }
-    setCantidad(valor);
-    updateBackground(valor);
-  };
+  // const handleChangeIncremento = () => {
+  //   const valor = cantidad + STEP;
+  //   if (valor > MAX) {
+  //     alert('Cantidad no válida');
+  //     return;
+  //   }
+  //   setCantidad(valor);
+  //   updateBackground(valor);
+  // };
 
   const pagoMensual = total / dias;
 
   return (
-
-
     <div className={styles.body} >
         <div className={styles.quoterContainer}>            
         <Header />
@@ -123,11 +125,11 @@ const Quoter = () => {
             value={dias}
             onChange={(e) => setDias(Number(e.target.value))}
             >
-            <option value="1"> Plazos </option> 
+            <option value=""> Plazos </option> 
             <option value="15">15 Días</option>
             <option value="30">30 Días</option>
             <option value="3">3 Meses</option>
-            {/* <option value="6">6 Meses</option> */}
+            <option value="5">5 Meses</option>
             </select>
         </div>
 
