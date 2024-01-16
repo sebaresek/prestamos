@@ -1,173 +1,217 @@
-/* About.module.css */
-.body {
-    display: flex;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: right;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1000px;
-    padding: 1em;
-    margin: 1em;
-  }
-
-  .title {
-    display: flex;
-    color: white;
-    margin-left: 1.8em;
-    margin-top: 3em;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3em;
-  }
-
-
-  .text {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-left: 4.5em;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-  }
-
-  .fondo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-  }
-
-  .button {
-    position: absolute;
-    padding: .7em 1.5em;
-    top: 1.5em;
-    right: 23em ;
-    border: 0px solid #ffffff00;
-    font-size: 17px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-    border-radius: 1em;
-    background-color: transparent;
-    font-weight: bolder;
-  } 
-
-  .button:hover {
-    background-color: #3535358a ;
-    border-radius: 1em;
-    color: #fff;
-  }
-    
-  .button:active {
-    transform: scale(0.9);
-  }
-
-  @media (max-width: 1376px) {
-    
-    .tittle {
-      font-size: 2.5em;
-      margin-left: 1em;
-    }
-  
-    .text {
-      margin-left: 1em;
-      font-size: 20px;
-    }
-  
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* height: 62%; */
-      width: 60%;
-      padding: 0em;
-      margin: 1em;
-      
-    }
-  
-    .button {
-      margin-left: 2em;
-    }
-  }
-
-
-@media (max-width: 575px) {
 /* .body {
-  background-image: url(../../Assets/landing.jpg);
-    display: flex;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: right;
-    margin: 0;
-    overflow: hidden;
-} */
+    position: relative;
+  } */
 
 .container {
-    margin-top: 4em !important;
-    display: flex;
+    text-align: center;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    height: 90%;
-    width: 90%;
-    padding: 1em;
-    margin: 1em;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    background: #d2d7dfbd;
-}
-  
-  .title {
-    margin-top: 0em;
-    font-size: 1.5em;
-    margin-left: 0.5em;
-    color: #143157;
-}
-  
-  .text {
-    margin-left: 1em;
-    font-size: 15px;
-    color: #091a22;
-    font-weight: bold;
+    width: 100%;
+    height: 100%;
   }
-  
 
-  .button {
+.fondo {
     position: absolute;
-    padding: .7em 1.5em;
-    top: 1.3em;
-    right: 16em ;
-    border: 0px solid #ffffff00;
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-    border-radius: 1em;
-    background-color: transparent;
-    font-weight: bolder;
-  } 
-
-  .button:hover {
-    background-color: #3535358a ;
-    border-radius: 1em;
-    color: #fff;
-  }
-    
-  .button:active {
-    transform: scale(0.9);
-  }
-  
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Assets/bannerHome.47f5deb32febc5c93be0.svg');
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
 }
+
+.fondo_two {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/fondo_two.svg');
+  background-size: cover;
+  z-index: -2;
+}
+
+.fondo_manos {
+  position: absolute;
+  top: 18rem;
+  right: 4rem; /* Posicionado a la derecha */
+  width: 440px; /* Ajusta el ancho como desees */
+  height: 250px; /* Ajusta la altura como desees */
+  background-image: url('../../Assets/manos.jpg');
+  background-size: cover;
+  background-position: right; /* Alinea la imagen de fondo a la derecha */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  z-index: -1; /* Asegura que esté sobre fondo_two */
+}
+
+.fondo_dinero {
+  position: absolute;
+  top: 5rem;
+  right: 9rem; 
+  width: 350px; 
+  height: 220px;
+  background-image: url('../../Assets/dinero.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  z-index: -1; /* Asegura que esté sobre fondo_two */
+}
+
+
+  .title {
+    text-align: left;
+    padding-left: 9rem;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 5.5rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    padding-top: 4rem;
+  }
+
+  .textContainer {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+  .text {
+    font-size: 1.6rem; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-bottom: 7rem;
+  }
+
+.title_two {
+  color: #383838!important;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.text_two {
+  color: #383838!important;
+  font-size: 1.3rem; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 4rem;
+}
+
+.title_three {
+  color: #fff;
+  text-align: left;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  padding-left: 9rem;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+  padding-top: 7rem;
+}
+
+.text_three {
+  color: #fff;
+  width: 50%;
+  font-size: 1.4rem; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  padding-bottom: 5rem;
+  margin-bottom: 0px;
+}
+
+
+  @media (max-width: 1376px) {
+    .fondo_dinero {
+      position: absolute;
+      top: 8rem;
+      right: 4rem; 
+      width: 300px; 
+      height: 200px;
+      background-image: url('../../Assets/dinero.png');
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      z-index: -1; /* Asegura que esté sobre fondo_two */
+    }
+
+    .fondo_manos {
+      position: absolute;
+      top: 19rem;
+      right: 1.5rem; /* Posicionado a la derecha */
+      width: 440px; /* Ajusta el ancho como desees */
+      height: 250px; /* Ajusta la altura como desees */
+      background-image: url('../../Assets/manos.jpg');
+      background-size: cover;
+      background-position: right; /* Alinea la imagen de fondo a la derecha */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      z-index: -1; /* Asegura que esté sobre fondo_two */
+    }
+  }
+
+
+  @media (max-width: 575px) {
+    .container{
+      margin-top: 73px;
+    }
+
+    .fondo_manos {
+      background-position: center;
+      width: auto;
+      height: 200px;
+      top: 55rem;
+      right: 0;
+      left: 0;
+    }
+    .fondo_dinero{
+      display: none;
+    }
+    .text_three, .text, .title, .text_two, .title_three, .title_two {
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+    .title{
+      font-size: 3.5rem;
+      padding-left: 1rem;
+    }
+    .text{
+      padding-left: 1rem;
+      padding-right: 0;
+      width: auto;
+    }
+    .title_two{
+      font-size: 1.5rem;
+    }
+    .text_two{
+      text-align: center;
+      margin-right: 0;
+    }
+    .title_three{
+      font-size: 2.7rem;
+      padding-left: 1rem;
+    }
+    .text_three{
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      width: auto;
+      padding-bottom: 17rem;
+    }
+    .text, .text_two, .text_three{
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
+  }

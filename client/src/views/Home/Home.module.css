@@ -30,6 +30,7 @@
 }
 
 .title {
+    padding-top: 1rem;
     justify-content: center;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -126,7 +127,8 @@
     }
 
     .content {
-        padding-top: 0.5rem;
+        padding-top: 1px;
+        margin-top: 65px;
         padding-bottom: 4rem;
     }
     .contain_req{

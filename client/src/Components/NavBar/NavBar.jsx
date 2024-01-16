@@ -1,26 +1,50 @@
+import React, { useState, useEffect } from 'react';
+import burger from '../../Assets/icon-hambur.png';
 import style from './NavBar.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import money from '../../Assets/logo.png';
-
-
-
 
 const NavBar = () => {
+    const [menuActive, setMenuActive] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuActive(prev => {
+            const newState = !prev;
+            if (newState) {
+                document.body.classList.add('menu_active');
+            } else {
+                document.body.classList.remove('menu_active');
+            }
+            return newState;
+        });
+    };
+
     return(
         <nav className={style.nav}>
-            <img src={money} className={style.nav_money} width="60px"/>
-
-            {/* <button className={style.button}>
-                <a style={{textDecoration: 'none', color: '#3b3b3b'}} href='/about'>ABOUT</a>
-            </button> */}
-
-            <button className={style.buttonContact}>
-                <a href="https://wa.me/3765084215" style={{textDecoration: 'none', color: 'white'}} target="_blank" rel="noopener noreferrer">
-                    WHATSAPP
-                    <FontAwesomeIcon icon={faWhatsapp}  className={style.icon}/>
-                </a>
-            </button>
+            <div className={style.toggle_menu} onClick={toggleMenu}>
+                <label htmlFor="toggle_menu_check">
+                    <img src={burger} alt="icon" />
+                </label>
+            </div>
+            <input 
+                type="checkbox" 
+                className={style.toggle_menu_check} 
+                id='toggle_menu_check'
+                checked={menuActive}
+            />
+             <ul id='main-menu' className={`${style.main_menu} ${menuActive ? style.menu_active : ''}`}>
+                <li className={style.main_menu_item_one}>
+                    <a href="/" className={style.main_menu_link}> Inicio </a>
+                </li>
+                <li className={style.main_menu_item}>
+                    <a href="/about" className={style.main_menu_link}> Nosotros </a>
+                </li>
+                <li className={style.main_menu_item}>
+                    <a href="https://wa.me/3765084215" 
+                        target="_blank" rel="noopener noreferrer"
+                        className={style.main_menu_link_wsp}> 
+                        WhatsApp 
+                    </a>
+                </li>
+            </ul>
         </nav>
     );
 }

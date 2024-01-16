@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './Quoter.module.css';
 import { calcularTotalPagar } from './Helpers';
-import fondo from '../../Assets/landing.jpg';
-import NavBar from '../../Components/NavBar/NavBar';
 
 const Button = ({ operador, fn }) => (
   <button type="button" className={styles.button} onClick={fn}>
