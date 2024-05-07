@@ -19,11 +19,11 @@ const Header = () => (
 );
 
 const Quoter = () => {
-  const [cantidad, setCantidad] = useState(50000);
+  const [cantidad, setCantidad] = useState(150000);
   const [dias, setDias] = useState(6);
   const [total, setTotal] = useState(0);
   const MIN = 0;
-  const MAX = 100000;
+  const MAX = 300000;
   const STEP = 1000;
   const inputRangeRef = useRef(null);
   const [renderizadoInicial, setRenderizadoInicial] = useState(true);
@@ -44,7 +44,7 @@ const Quoter = () => {
   const updateBackground = (value = cantidad) => {
     const range = inputRangeRef.current;
     const percent = ((value - range.min) / (range.max - range.min)) * 100;
-    const gradient = `linear-gradient(to right, #DA0067 0%, #DA0067 ${percent}%, #d1d5db ${percent}%, #d1d5db 100%)`;
+    const gradient = `linear-gradient(to right, #0a7447f3 0%, #0a7447f3 ${percent}%, #d1d5db ${percent}%, #d1d5db 100%)`;
     range.style.background = gradient;
   };
 
@@ -64,27 +64,6 @@ const Quoter = () => {
     }
     setRenderizadoInicial(false);
   }, [renderizadoInicial]);
-  
-
-  // const handleChangeDecremento = () => {
-  //   const valor = cantidad - STEP;
-  //   if (valor < MIN) {
-  //     alert('Cantidad no válida');
-  //     return;
-  //   }
-  //   setCantidad(valor);
-  //   updateBackground(valor);
-  // };
-
-  // const handleChangeIncremento = () => {
-  //   const valor = cantidad + STEP;
-  //   if (valor > MAX) {
-  //     alert('Cantidad no válida');
-  //     return;
-  //   }
-  //   setCantidad(valor);
-  //   updateBackground(valor);
-  // };
 
   const pagoMensual = total / dias;
 
@@ -112,8 +91,6 @@ const Quoter = () => {
             ref={inputRangeRef}
             />
 
-            {/* <p className={styles.totalAmount}>{formatearDinero(cantidad)}</p> */}
-
             <h2 className={styles.plazo}>
             Elige un <span className={styles.textIndigo}>Plazo</span> a pagar
             </h2>
@@ -126,6 +103,7 @@ const Quoter = () => {
             <option value=""> Plazos </option> 
             <option value="15">15 Días</option>
             <option value="30">30 Días</option>
+            <option value="2">2 Meses</option>
             <option value="3">3 Meses</option>
             <option value="5">5 Meses</option>
             </select>

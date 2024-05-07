@@ -17,6 +17,8 @@ const calcularTotalPagar = (cantidad, plazo) => {
         total *= 1.35
     }else if(plazo === 30){
         total *= 1.5
+    }else if(plazo === 2){
+        total *=  1.8
     }else if(plazo === 3){
         total *=  2
     }else if(plazo === 5){

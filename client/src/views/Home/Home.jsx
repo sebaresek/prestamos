@@ -1,7 +1,7 @@
 import Quoter from "../Quoter/Quoter"
 import NavBar from "../../Components/NavBar/NavBar";
 import styles from "./Home.module.css"
-import dni from "../../Assets/dni.svg"
+import dni from "../../Assets/dni.png"
 import phono from "../../Assets/phono.png"
 import bille from  "../../Assets/billetera.svg"
 
@@ -42,7 +42,7 @@ const Home = () => {
 
             <div className={styles.contain_dudas}>
                 <h5>¿Tenés más dudas? <span> </span>
-                <a href="https://wa.me/3765084215" style={{color: '#da0067'}} target="_blank" rel="noopener noreferrer">Ingresa acá</a>
+                <a href="https://wa.me/3765084215" style={{color: '#0a7447f3'}} target="_blank" rel="noopener noreferrer">Ingresa acá</a>
                 </h5>
             </div>
         </div>

@@ -18,6 +18,28 @@
   font-family: 'Poppins';
 }
 
+.nav_logo{
+  position: fixed;
+  top: .6rem; 
+  left: 5rem; 
+  z-index: 5; 
+}
+
+.nav_logo_i{  
+  text-decoration: none;
+  display: block;
+  color: #0a7447f3;
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-family: 'Montserrat';
+}
+
+.nav_logo_l{
+  color: #252525dc;
+}
+
 .main_menu_item {
   padding: 1em;
   text-align: center;
@@ -51,7 +73,7 @@
   letter-spacing: 0.00938em;
 }
 
-.main_menu_link_wsp{
+.main_menu_link_wsp {
   text-decoration: none;
   display: block;
   color: white;
@@ -59,10 +81,16 @@
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.00938em;
-  border-radius: 40px;
+  border-radius: 12px;
   padding: 10px 15px;
   text-align: center;
-  background: #128c7e;
+  background: #09945af8;
+  transition: transform 0.3s ease; 
+}
+
+.main_menu_link_wsp:hover {
+  filter: brightness(95%);
+  transform: translateY(-2px); /* Desplazar el botón hacia arriba */
 }
 
 .main_menu_show{
@@ -100,8 +128,20 @@
   .main_menu{
     height: 100%;
     width: auto;
+    /* right: .7rem; */
   }
   .main_menu_item_one{
     margin-top: 5rem;
   }
+  .nav_logo{
+    position: relative;
+    display: flex;
+    top: .6rem; 
+    bottom: 0px;
+    left: auto;
+    padding-left: 1.2rem;
+    z-index: 1;
+  }
 }
+
+

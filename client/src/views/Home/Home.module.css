@@ -1,7 +1,7 @@
 /* Estilos base (para escritorio) */
 .content {
     position: relative;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 4rem;
 }
 
@@ -61,6 +61,7 @@
     color: #585858;
     margin-bottom: 2rem;
     padding-bottom: 4rem;
+    /* margin-top: 3rem; */
 }
 
 /* Estilos para los elementos individuales */
@@ -85,10 +86,11 @@
 }
 
 .contain_req_title{
-    color: #da0067;
+    color: #08613cdc;
     text-align: left;
     margin: 0;
     font-size: 1.6rem;
+    margin-right: 1.5rem;
 }
 
 .req_h4{
@@ -102,7 +104,7 @@
 }
 
 .contain_dudas{
-    color: #da0067;
+    color: #585858;
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
@@ -128,7 +130,7 @@
 
     .content {
         padding-top: 1px;
-        margin-top: 65px;
+        /* margin-top: 65px; */
         padding-bottom: 4rem;
     }
     .contain_req{
@@ -148,7 +150,7 @@
     
     .contain_req_title{
         text-align: center !important;
-        color: #da0067;
+        color: #0a7447f3;
         margin: 0;
         font-size: 1.2rem !important;
     }
@@ -181,7 +183,7 @@
     }
     
     .contain_req_title{
-        color: #da0067;
+        color: #0a7447f3;
         text-align: left;
         margin: 0;
         font-size: 1.6rem;

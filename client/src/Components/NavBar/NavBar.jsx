@@ -19,10 +19,20 @@ const NavBar = () => {
 
     return(
         <nav className={style.nav}>
+
             <div className={style.toggle_menu} onClick={toggleMenu}>
                 <label htmlFor="toggle_menu_check">
                     <img src={burger} alt="icon" />
                 </label>
+            </div>
+            <div className={style.nav_logo}>
+                <a href="/" className={style.nav_logo_i}>
+                    Invert
+                    <span className={style.nav_logo_l}>
+                        Lend
+                    </span>
+                    .
+                </a>
             </div>
             <input 
                 type="checkbox" 
@@ -31,6 +41,7 @@ const NavBar = () => {
                 checked={menuActive}
             />
              <ul id='main-menu' className={`${style.main_menu} ${menuActive ? style.menu_active : ''}`}>
+
                 <li className={style.main_menu_item_one}>
                     <a href="/" className={style.main_menu_link}> Inicio </a>
                 </li>
