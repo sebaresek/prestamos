@@ -127,7 +127,7 @@ const Quoter = () => {
                 <p className={styles.paymentSummarySinglePayment}>En un solo pago!</p>
             ) : (
                 <p className={styles.paymentSummaryMonthlyPayment}>
-                Cuota Mensual de: {formatearDinero(pagoMensual)} ARS
+                Pagos Mensuales de: {formatearDinero(pagoMensual)} ARS
                 </p>
             )}
             </div>
@@ -139,7 +139,7 @@ const Quoter = () => {
 
             <p className={styles.paymentSummaryTotal}>Total: -------- </p>
 
-            <p className={styles.paymentSummaryMonthlyPayment}>Pago Mensual de: -------- </p>
+            <p className={styles.paymentSummaryMonthlyPayment}>Pagos Mensuales de: -------- </p>
             </div>
         )}
         <div className={styles.container_button_contact}>
