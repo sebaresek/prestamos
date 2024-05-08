@@ -66,6 +66,10 @@ const Quoter = () => {
   }, [renderizadoInicial]);
 
   const pagoMensual = total / dias;
+  const mensajeWhatsApp = `Hola, me interesa solicitar un préstamo de ${formatearDinero(cantidad)} para pagar en ${dias} ${dias === 15 || dias === 30 ? 'días' : 'meses'}.`;
+  const numeroWhatsApp = '3765084215';
+  const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensajeWhatsApp)}`;
+
 
   return (
     <div className={styles.body} >
@@ -123,7 +127,7 @@ const Quoter = () => {
                 <p className={styles.paymentSummarySinglePayment}>En un solo pago!</p>
             ) : (
                 <p className={styles.paymentSummaryMonthlyPayment}>
-                Pagos Mensuales de: {formatearDinero(pagoMensual)} ARS
+                Cuota Mensual de: {formatearDinero(pagoMensual)} ARS
                 </p>
             )}
             </div>
@@ -135,9 +139,17 @@ const Quoter = () => {
 
             <p className={styles.paymentSummaryTotal}>Total: -------- </p>
 
-            <p className={styles.paymentSummaryMonthlyPayment}>Pagos Mensuales de: -------- </p>
+            <p className={styles.paymentSummaryMonthlyPayment}>Pago Mensual de: -------- </p>
             </div>
         )}
+        <div className={styles.container_button_contact}>
+            <a href={urlWhatsApp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.button_contact}
+            > Pedilo ahora! 
+            </a>
+        </div>
         </div>
     </div>
   );
