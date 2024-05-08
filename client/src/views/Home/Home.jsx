@@ -2,7 +2,7 @@ import Quoter from "../Quoter/Quoter"
 import NavBar from "../../Components/NavBar/NavBar";
 import styles from "./Home.module.css"
 import dni from "../../Assets/dni.png"
-import phono from "../../Assets/phono.png"
+import phono from "../../Assets/bank.png"
 import bille from  "../../Assets/billetera.svg"
 
 const Home = () => {
@@ -24,13 +24,13 @@ const Home = () => {
                 </div>
 
                 <div className={styles.contain_req_div}>
-                    <img src={dni} className={styles.req_img} alt="dni" width="120px"/>
+                    <img src={dni} className={styles.req_img1} alt="dni" width="120px"/>
                     <h4 className={styles.req_h4}> Ser mayor de 18 años y tener DNI Argentino </h4>
                 </div>
 
                 <div className={styles.contain_req_div_phono}>
-                    <img src={phono} className={styles.req_img} alt="phono" width="140px"/>
-                    <h4 className={styles.req_h4}> Tener un número de celular </h4>
+                    <img src={phono} className={styles.req_img1} alt="phono" width="140px"/>
+                    <h4 className={styles.req_h4}> Tener una cuenta de banco o billetera virtual a tu nombre </h4>
                 </div>
 
                 <div className={styles.contain_req_div_bille}>

@@ -51,7 +51,6 @@
     justify-content: space-around; /* Ajusta el espaciado entre elementos */
     flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay espacio */
     align-items: center;
-    /* text-align: left; */
     flex-direction: row;
     margin-right: 10%;
     margin-left: 10%;
@@ -59,6 +58,7 @@
     background-color: #f3f3f3;
     padding: 30px;
     color: #585858;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     padding-bottom: 4rem;
     /* margin-top: 3rem; */
@@ -69,20 +69,21 @@
     text-align: center;
     flex: 1; /* Cada elemento toma un espacio igual */
     padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
+    margin-top: 1rem;
 }
 
 .contain_req_div_phono{
     text-align: center;
     flex: 1; /* Cada elemento toma un espacio igual */
     padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
-    margin-bottom: 2.8rem;
+    margin-top: 2.5rem;
 }
 
 .contain_req_div_bille{
     text-align: center;
     flex: 1; /* Cada elemento toma un espacio igual */
     padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
-    margin-bottom: 1.3rem;
+    /* margin-bottom: 1.3rem; */
 }
 
 .contain_req_title{
@@ -99,8 +100,11 @@
 }
 
 .req_img {
-    padding-top: 1.5rem;
-    margin-bottom: 0;
+    padding-top: 0px;
+}
+
+.req_img1 {
+    padding-bottom: 1.8rem;
 }
 
 .contain_dudas{
@@ -130,7 +134,6 @@
 
     .content {
         padding-top: 1px;
-        /* margin-top: 65px; */
         padding-bottom: 4rem;
     }
     .contain_req{
@@ -159,11 +162,6 @@
         margin: 0;
         font-size: 1.3rem;
     }
-    
-    .req_img{
-        padding-top: 1.5rem;
-        margin-bottom: 0;
-    }
 }
 
 
@@ -172,14 +170,14 @@
         text-align: center;
         flex: 1; /* Cada elemento toma un espacio igual */
         padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
-        margin-bottom: 3rem;
+        /* margin-bottom: 3rem; */
     }
     
     .contain_req_div_bille{
         text-align: center;
         flex: 1; /* Cada elemento toma un espacio igual */
         padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
     
     .contain_req_title{
@@ -187,5 +185,8 @@
         text-align: left;
         margin: 0;
         font-size: 1.6rem;
+    }
+    .contain_req_div {
+        margin-top: 0rem;
     }
 }
