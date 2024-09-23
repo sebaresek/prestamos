@@ -1,0 +1,148 @@
+/* Estilo para la tabla */
+.table_container {
+    width: auto;
+    margin-top: 2.5rem;
+    border-collapse: collapse;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+/* Estilo para las celdas de encabezado */
+.table_container th {
+    background-color: #f5f5f5;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #085f81;
+}
+/* Estilo alternativo para filas de datos */
+.table_container tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    
+}
+/* Estilo para las celdas de datos */
+.table_container td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+/* Estilo para celdas de datos en la primera columna */
+.table_container td:first-child {
+    font-weight: bold;
+    color: #333;
+}
+/* Estilo para filas al pasar el mouse */
+.table_container tbody tr:hover {
+    background-color: #adadad56;
+}
+.table_container table {
+    overflow: hidden;
+    border-radius: 8px;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.212); 
+    /* ************************************ */
+    /* box-shadow: 0 2px 8px rgba(255, 255, 255, 0.603);  */
+}
+
+.delete{
+    width: 21px;
+    height: auto;
+    color: #be2636;
+    text-decoration: none;
+    margin: .05rem;
+    margin-right: .5rem;
+    padding-bottom: .1rem;
+    margin-top: .1rem;
+}
+.delete:hover {
+    color: #691019; /* Cambiar color al pasar el mouse */
+}
+
+.edit{
+    width: 22px;
+    height: auto;
+    color: #222222;
+    text-decoration: none;
+    margin: .05rem;
+    margin-left: .7rem;
+    padding-bottom: .1rem;
+    margin-top: .1rem;
+}
+.edit:hover {
+    color: #000000; /* Cambiar color al pasar el mouse */
+}
+
+/* Estilo para el fondo oscuro */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el modal */
+.modal {
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); 
+    width: 300px;
+    text-align: center;
+}
+
+
+/* Estilo para los botones del modal */
+.modal-buttons {
+    margin-top: 20px;
+}
+
+/* Estilo para el botón dentro del modal */
+.modal button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white;
+    border-radius: 4px;
+}
+
+/* Estilo para el botón de Cancelar */
+.modal button.cancel {
+    background-color: #6C757D; /* Color de fondo alternativo */
+}
+
+.modal input{
+    border-radius: 4px;
+    width: 10rem;
+    height: 1.5rem;
+    margin: .3rem;
+    border-collapse: collapse;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1d1d1d;
+    font-size: 15px;
+}
+
+.modal h2{
+    border-collapse: collapse;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.modal_input_especial{
+    margin-bottom: 25px !important;
+}

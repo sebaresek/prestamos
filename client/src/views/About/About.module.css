@@ -167,12 +167,13 @@
   @media (max-width: 575px) {
 
     .fondo_manos {
-      background-position: center;
+      /* background-position: center;
       width: auto;
       height: 200px;
       top: 55rem;
       right: 0;
-      left: 0;
+      left: 0; */
+      display: none;
     }
     .fondo_dinero{
       display: none;
@@ -209,7 +210,7 @@
       margin: 0;
       padding: 0;
       width: auto;
-      padding-bottom: 17rem;
+      padding-bottom: 1rem;
     }
     .text, .text_two, .text_three{
       margin-left: .5rem;
@@ -218,4 +219,4 @@
     .textContainer {
       padding-top: 0px;
   }
-  }
+}

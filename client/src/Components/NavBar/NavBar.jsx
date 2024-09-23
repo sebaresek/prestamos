@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import burger from '../../Assets/icon-hambur.png';
 import style from './NavBar.module.css';
+import logo from "../../Assets/InvertLend.png"
+import pesos from "../../Assets/pesos.png"
 
 const NavBar = () => {
     const [menuActive, setMenuActive] = useState(false);
@@ -27,11 +29,10 @@ const NavBar = () => {
             </div>
             <div className={style.nav_logo}>
                 <a href="/" className={style.nav_logo_i}>
-                    Invert
-                    <span className={style.nav_logo_l}>
-                        Lend
-                    </span>
-                    .
+                    <img src={pesos} width="21px" 
+                    className={style.nav_logo_i_s}/>
+                    <img src={logo} alt="logo" width="150px"/>
+
                 </a>
             </div>
             <input 
