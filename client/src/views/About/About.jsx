@@ -22,12 +22,12 @@ const About = () => {
             <div className={styles.container}>
               <div className={styles.title_two}>
                 <h2>Somos una empresa Financiera</h2>
-              </div>
-              <p className={styles.text_two}>A nosotros nos apasiona ayudar a las personas a alcanzar sus metas financieras y superar cualquier obstáculo que se les presente en el camino.
-              Nos enorgullece ofrecer un proceso simple y transparente, sin complicaciones ni sorpresas desagradables. 
-              <br />
-              Valoramos la confianza que depositas en nosotros y nos esforzamos por brindarte un servicio excepcional.
-              <br/><br/></p>
+                </div>
+                  <p className={styles.text_two}>A nosotros nos apasiona ayudar a las personas a alcanzar sus metas financieras y superar cualquier obstáculo que se les presente en el camino.
+                  Nos enorgullece ofrecer un proceso simple y transparente, sin complicaciones ni sorpresas desagradables. 
+                  <br />
+                  Valoramos la confianza que depositas en nosotros y nos esforzamos por brindarte un servicio excepcional.
+                  <br/><br/></p>
               </div>
 
 

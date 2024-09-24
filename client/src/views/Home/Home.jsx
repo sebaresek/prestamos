@@ -1,5 +1,6 @@
 import Quoter from "../Quoter/Quoter"
 import NavBar from "../../Components/NavBar/NavBar";
+import Footer from "../../Components/Footer/Footer";
 import styles from "./Home.module.css"
 import dni from "../../Assets/dni.png"
 import phono from "../../Assets/bank.png"
@@ -45,6 +46,7 @@ const Home = () => {
                 <a href="https://wa.me/3765084215" style={{color: '#0a7447f3'}} target="_blank" rel="noopener noreferrer">Ingresa acá</a>
                 </h5>
             </div>
+            <Footer />
         </div>
     )
 }

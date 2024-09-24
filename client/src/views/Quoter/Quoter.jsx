@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import styles from './Quoter.module.css';
 import { calcularTotalPagar } from './Helpers';
 
-const Button = ({ operador, fn }) => (
-  <button type="button" className={styles.button} onClick={fn}>
-    {operador}
-  </button>
-);
+// const Button = ({ operador, fn }) => (
+//   <button type="button" className={styles.button} onClick={fn}>
+//     {operador}
+//   </button>
+// );
 
 const Header = () => (
   <h1 className={styles.header}>
