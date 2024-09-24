@@ -211,7 +211,8 @@
     margin-top: 0em !important;
     max-width: 310px;
     width: 80%;
-    height: 33em ;
+    /* height: 33em ; */
+    height: 100% ;
     margin: auto;
     padding: 20px;
     background-color: #ddddddda;
