@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import NavBar from '../../Components/NavBar/NavBar'
+import Footer from '../../Components/Footer/Footer'
 
 
 const About = () => {
@@ -41,6 +42,7 @@ const About = () => {
                     <div className={styles.fondo_manos}></div> 
                 </div>
             </div>
+            <Footer/>
         </div>
   );
 };
