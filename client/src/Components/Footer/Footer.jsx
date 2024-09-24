@@ -32,7 +32,7 @@ const Footer = () => {
                      +543765084215
                 </p>
                 <p style={{ marginTop: '1px'}}>
-                    <FcMoneyTransfer   style={{ fontSize: '22px', marginRight: '7px' }} />
+                    <FcMoneyTransfer  style={{ fontSize: '22px', marginRight: '7px' }} />
                     sebaresekk@gmail.com
                 </p>
             </div>

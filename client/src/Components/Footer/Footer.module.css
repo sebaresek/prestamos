@@ -5,9 +5,11 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
 }
 
 .footerSection {
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
     max-width: 250px;
     display: flex; /* Usa flexbox */
@@ -17,7 +19,7 @@
 
 .footerSection h4{
     margin-bottom: 10px;
-    font-family: 'Montserrat';
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #212121;
     font-weight: bold;
@@ -29,7 +31,7 @@
     margin: 3px 0;
     color: #212121;
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: 'Poppins', sans-serif;
 }
 
 .footerSection p {
@@ -37,7 +39,7 @@
     margin: 0px 0;
     color: #212121;
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: 'Poppins', sans-serif;
     display: flex; /* Usa flexbox en el párrafo */
     align-items: center; /* Centra verticalmente */
 }
@@ -54,7 +56,7 @@
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 14px;
-    font-family: 'Montserrat';
+    font-family: 'Poppins', sans-serif;
 }
 
 .paymentMethods span {
