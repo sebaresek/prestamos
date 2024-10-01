@@ -1,0 +1,222 @@
+/* .body {
+    position: relative;
+  } */
+
+.container {
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+.fondo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Assets/bannerHome.47f5deb32febc5c93be0.svg');
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.fondo_two {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/fondo_two.svg');
+  background-size: cover;
+  z-index: -2;
+}
+
+.fondo_manos {
+  position: absolute;
+  top: 18rem;
+  right: 4rem; /* Posicionado a la derecha */
+  width: 440px; /* Ajusta el ancho como desees */
+  height: 250px; /* Ajusta la altura como desees */
+  background-image: url('../../Assets/manos.jpg');
+  background-size: cover;
+  background-position: right; /* Alinea la imagen de fondo a la derecha */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  z-index: -1; /* Asegura que esté sobre fondo_two */
+}
+
+.fondo_dinero {
+  position: absolute;
+  top: 7rem;
+  right: 9rem; 
+  width: 350px; 
+  height: 220px;
+  background-image: url('../../Assets/dinero.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  z-index: -1; /* Asegura que esté sobre fondo_two */
+}
+
+
+  .title {
+    text-align: left;
+    padding-left: 9rem;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 5.5rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    padding-top: 4rem;
+  }
+
+  .textContainer {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding-top: 2rem;
+}
+  .text {
+    font-size: 1.6rem; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-bottom: 7rem;
+  }
+
+.title_two {
+  color: #383838!important;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.text_two {
+  color: #383838!important;
+  font-size: 1.3rem; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 4rem;
+}
+
+.title_three {
+  color: #fff;
+  text-align: left;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  padding-left: 9rem;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+  padding-top: 7rem;
+}
+
+.text_three {
+  color: #fff;
+  width: 50%;
+  font-size: 1.4rem; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  padding-bottom: 5rem;
+  margin-bottom: 0px;
+}
+
+
+  @media (max-width: 1376px) {
+    .fondo_dinero {
+      position: absolute;
+      top: 8rem;
+      right: 4rem; 
+      width: 300px; 
+      height: 200px;
+      background-image: url('../../Assets/dinero.png');
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      z-index: -1; /* Asegura que esté sobre fondo_two */
+    }
+
+    .fondo_manos {
+      position: absolute;
+      top: 19rem;
+      right: 1.5rem; /* Posicionado a la derecha */
+      width: 440px; /* Ajusta el ancho como desees */
+      height: 250px; /* Ajusta la altura como desees */
+      background-image: url('../../Assets/manos.jpg');
+      background-size: cover;
+      background-position: right; /* Alinea la imagen de fondo a la derecha */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      z-index: -1; /* Asegura que esté sobre fondo_two */
+    }
+  }
+
+
+  @media (max-width: 575px) {
+
+    .fondo_manos {
+      /* background-position: center;
+      width: auto;
+      height: 200px;
+      top: 55rem;
+      right: 0;
+      left: 0; */
+      display: none;
+    }
+    .fondo_dinero{
+      display: none;
+    }
+    .text_three, .text, .title, .text_two, .title_three, .title_two {
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+    .title{
+      font-size: 3.5rem;
+      padding-left: 1rem;
+      margin-bottom: 0px;
+      margin-top: 8px;
+      padding-top: 25px;
+    }
+    .text{
+      padding-left: 1rem;
+      padding-right: 0;
+      width: auto;
+    }
+    .title_two{
+      font-size: 1.5rem;
+    }
+    .text_two{
+      text-align: center;
+      margin-right: 0;
+    }
+    .title_three{
+      font-size: 2.7rem;
+      padding-left: 1rem;
+    }
+    .text_three{
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      width: auto;
+      padding-bottom: 1rem;
+    }
+    .text, .text_two, .text_three{
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
+    .textContainer {
+      padding-top: 0px;
+  }
+}

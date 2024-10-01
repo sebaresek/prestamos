@@ -1,0 +1,194 @@
+/* Estilos base (para escritorio) */
+.content {
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Assets/bannerHome.47f5deb32febc5c93be0.svg');
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.paragraph {
+    font-size: 1.3rem; /* Tamaño de fuente ajustado para el párrafo */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.textContainer {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    padding-top: 1rem;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.167;
+    font-weight: 800;
+    font-size: 5.3556rem;
+    margin-bottom: 0;
+}
+
+.paragraph {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.167;
+    font-weight: 500;
+}
+
+.contain_req{
+    display: flex;
+    justify-content: space-around; /* Ajusta el espaciado entre elementos */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay espacio */
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 30px;
+    background-color: #f3f3f3ea;
+    padding: 30px;
+    color: #121212d5;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    /* margin-top: 3rem; */
+}
+
+/* Estilos para los elementos individuales */
+.contain_req_div {
+    text-align: center;
+    flex: 1; /* Cada elemento toma un espacio igual */
+    padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
+    margin-top: 1rem;
+}
+
+.contain_req_div_phono{
+    text-align: center;
+    flex: 1; /* Cada elemento toma un espacio igual */
+    padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
+    margin-top: 2.5rem;
+}
+
+.contain_req_div_bille{
+    text-align: center;
+    flex: 1; /* Cada elemento toma un espacio igual */
+    padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
+    /* margin-bottom: 1.3rem; */
+}
+
+.contain_req_title{
+    color: #121212e8;
+    text-align: left;
+    margin: 0;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+}
+
+.req_h4{
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.req_img {
+    padding-top: 0px;
+}
+
+.req_img1 {
+    padding-bottom: 1.8rem;
+}
+
+.contain_dudas{
+    color: #585858;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.334;
+    margin-bottom: 2rem;
+}
+
+.req_img2 {
+    margin-bottom: 1rem;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    .title {
+        font-size: 3rem; /* Tamaño de fuente más pequeño para el título */
+    }
+
+    .paragraph {
+        font-size: 1.3rem; /* Tamaño de fuente ajustado para el párrafo */
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        margin: 15px;
+    }
+
+    .content {
+        padding-top: 1px;
+        padding-bottom: 4rem;
+    }
+    .contain_req{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 10%;
+        margin-left: 10%;
+        border-radius: 30px;
+        background-color: #f3f3f3;
+        padding: 30px;
+        color: #121212d5;
+        margin-bottom: 5rem;
+        padding-bottom: 4rem;
+    }
+    
+    .contain_req_title{
+        text-align: center !important;
+        color: #121212e8;
+        margin: 0;
+        font-size: 1.2rem !important;
+    }
+    
+    .req_h4{
+        margin: 0;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .contain_req_div_phono{
+        text-align: center;
+        flex: 1; /* Cada elemento toma un espacio igual */
+        padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
+        /* margin-bottom: 3rem; */
+    }
+    
+    .contain_req_div_bille{
+        text-align: center;
+        flex: 1; /* Cada elemento toma un espacio igual */
+        padding: 10px; /* Agrega un poco de espacio alrededor de cada elemento */
+        /* margin-bottom: 0; */
+    }
+    
+    .contain_req_title{
+        color: #121212e8;
+        text-align: left;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    .contain_req_div {
+        margin-top: 0rem;
+    }
+}
