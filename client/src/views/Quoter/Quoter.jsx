@@ -66,7 +66,7 @@ const Quoter = () => {
   }, [renderizadoInicial]);
 
   const pagoMensual = total / dias;
-  const mensajeWhatsApp = `Hola, me interesa solicitar un préstamo de ${formatearDinero(cantidad)} para pagar en ${dias} ${dias === 15 || dias === 30 ? 'días' : 'meses'}.`;
+  const mensajeWhatsApp = `Me interesa solicitar un préstamo de ${formatearDinero(cantidad)} para pagar en ${dias} ${dias === 15 || dias === 30 ? 'días' : 'meses'}.`;
   const numeroWhatsApp = '3765084215';
   const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensajeWhatsApp)}`;
 

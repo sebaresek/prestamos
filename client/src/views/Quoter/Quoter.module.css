@@ -211,7 +211,6 @@
     margin-top: 0em !important;
     max-width: 310px;
     width: 80%;
-    /* height: 33em ; */
     height: 100% ;
     margin: auto;
     padding: 20px;
@@ -246,9 +245,8 @@
     
   .quoterContainer {
     margin-top: 0em !important;
-    /* max-width: 250px; */
     width: 80%;
-    height: 37em ;
+    height: 100% ;
     margin: auto;
     padding: 20px;
     background-color: #ddddddda;
@@ -283,7 +281,7 @@
     margin-top: 0em !important;
     /* max-width: 250px; */
     width: 80%;
-    height: 39em ;
+    height: 100% ;
     margin: auto;
     padding: 20px;
     background-color: #ddddddda;

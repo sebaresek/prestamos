@@ -57,9 +57,9 @@
     border-radius: 30px;
     background-color: #f3f3f3ea;
     padding: 30px;
-    color: #585858;
+    color: #121212d5;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding-bottom: 4rem;
     /* margin-top: 3rem; */
 }
@@ -87,7 +87,7 @@
 }
 
 .contain_req_title{
-    color: #08613cdc;
+    color: #121212e8;
     text-align: left;
     margin: 0;
     font-size: 1.6rem;
@@ -116,7 +116,9 @@
     margin-bottom: 2rem;
 }
 
-
+.req_img2 {
+    margin-bottom: 1rem;
+}
 
 
 /* Estilos para dispositivos móviles */
@@ -146,14 +148,14 @@
         border-radius: 30px;
         background-color: #f3f3f3;
         padding: 30px;
-        color: #585858be;
-        margin-bottom: 2rem;
+        color: #121212d5;
+        margin-bottom: 5rem;
         padding-bottom: 4rem;
     }
     
     .contain_req_title{
         text-align: center !important;
-        color: #0a7447f3;
+        color: #121212e8;
         margin: 0;
         font-size: 1.2rem !important;
     }
@@ -181,7 +183,7 @@
     }
     
     .contain_req_title{
-        color: #0a7447f3;
+        color: #121212e8;
         text-align: left;
         margin: 0;
         font-size: 1.6rem;

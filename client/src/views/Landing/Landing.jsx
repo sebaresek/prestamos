@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Landing.module.css'
-import fondo from '../../Assets/landing.jpg'
 import NavBar from '../../Components/NavBar/NavBar';
 
 function Landing() {
@@ -9,7 +8,6 @@ function Landing() {
 
         <div className={style.body}>
             <NavBar />
-            <img src={fondo} className={style.fondo} alt="fondo" />
             <div className={style.container}>
                 <h1 className={style.tittle} > Prestamos Personales </h1>
                 
