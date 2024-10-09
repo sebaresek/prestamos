@@ -44,7 +44,8 @@ const Quoter = () => {
   const updateBackground = (value = cantidad) => {
     const range = inputRangeRef.current;
     const percent = ((value - range.min) / (range.max - range.min)) * 100;
-    const gradient = `linear-gradient(to right, #0a7447f3 0%, #0a7447f3 ${percent}%, #d1d5db ${percent}%, #d1d5db 100%)`;
+    // const gradient = `linear-gradient(to right, #0a7447f3 0%, #0a7447f3 ${percent}%, #d1d5db ${percent}%, #d1d5db 100%)`;
+    const gradient = `linear-gradient(to right, #b8543b 0%, #ee6c4d ${percent}%, #d1d5db ${percent}%, #d1d5db 100%)`;
     range.style.background = gradient;
   };
 

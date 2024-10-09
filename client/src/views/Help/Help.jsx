@@ -6,11 +6,13 @@ import Footer from '../../Components/Footer/Footer';
 const Help = () => {
     return (
         <div>
-            <NavBar/>
-            <div className={styles.container}>
-                <div className={styles.fondo}></div> 
-                <div className={styles.textContainer}>
-                    <h1 className={styles.title}> Página de Ayuda</h1>
+            <div className={styles.fondo}>
+                <NavBar/>
+                <div className={styles.container}>
+                    {/* <div className={styles.fondo}></div>  */}
+                    <div className={styles.textContainer}>
+                        <h1 className={styles.title}> Página de Ayuda</h1>
+                    </div>
                 </div>
             </div>
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import burger from '../../Assets/icon-hambur.png';
 import style from './NavBar.module.css';
-import logo from "../../Assets/InvertLend.png"
+import logo from "../../Assets/InvertLendd.png"
 import pesos from "../../Assets/pesos.png"
 
 const NavBar = () => {
@@ -29,10 +29,9 @@ const NavBar = () => {
             </div>
             <div className={style.nav_logo}>
                 <a href="/" className={style.nav_logo_i}>
-                    <img src={pesos} width="21px" 
+                    <img src={pesos} width="23px" 
                     className={style.nav_logo_i_s}/>
-                    <img src={logo} alt="logo" width="150px"/>
-
+                    <img src={logo} alt="logo" width="170px"/>
                 </a>
             </div>
             <input 
@@ -42,7 +41,6 @@ const NavBar = () => {
                 checked={menuActive}
             />
              <ul id='main-menu' className={`${style.main_menu} ${menuActive ? style.menu_active : ''}`}>
-
                 <li className={style.main_menu_item_one}>
                     <a href="/" className={style.main_menu_link}> Inicio </a>
                 </li>
