@@ -6,6 +6,7 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #ddddddda;
+    /* background-color: #293241; */
     border-radius: 25px;
   }
   
@@ -45,7 +46,7 @@
     appearance: none;
     width: 24px;
     height: 24px;
-    background-color: #0a7447f3;
+    background-color: #ee6c4d;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
@@ -97,17 +98,17 @@
     justify-content: center;
     color: #333;
     font-weight: bold;
-    background-color: #0a7447f3;
+    background-color: #fff;
     border-color: transparent;
     border-radius: 9999px;
     outline: none;
     cursor: pointer;
-    transition: outline 0.5s #0a7447f3, ring 0.2s;
+    transition: outline 0.5s #fff, ring 0.2s;
   }
   
   .button:hover {
     /* outline: 2px solid rgb(218, 0, 103); */
-    outline: 2px solid #0a7447f3;
+    outline: 2px solid #fff;
     outline-offset: 2px;
   }
   
@@ -192,7 +193,12 @@
     letter-spacing: 0.00938em;
     border-radius: 12px;
     padding: 10px 15px;
-    background: #097749f8;
+    /* background: #cc5e2f; */
+    background: linear-gradient(
+      320deg,
+      #ee6c4d,
+      #b8543b
+    );
     font-weight: bold;
     text-transform: uppercase;
     transition: transform 0.3s ease; 

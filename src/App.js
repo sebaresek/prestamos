@@ -11,7 +11,7 @@ import Landing from './views/Landing/Landing';
 function App() {
   return (
     <div className="App"> 
-      <Route exact path='/peertopeer' component={Landing} /> 
+      <Route exact path='/a' component={Landing} /> 
       <Route exact path='/about' component={About} />  
       <Route exact path='/quoter' component={Quoter} /> 
       <Route exact path='/dash' component={Dashboard} /> 
