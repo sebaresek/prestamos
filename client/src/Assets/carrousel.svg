@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <svg width="2897" height="260" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&display=swap');
+            .texto {
+                font-family: 'Blinker', sans-serif;
+                font-weight: 600;
+            }
  <defs>
   <linearGradient id="paint0_linear_6815_11163" x1="0.18" x2="0.82" y1="1" y2="0">
    <stop offset="0.21" stop-color="#FE7717"/>
