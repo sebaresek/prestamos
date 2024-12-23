@@ -110,7 +110,7 @@ const Quoter = () => {
             <option value="30">30 Días</option>
             <option value="2">2 Meses</option>
             <option value="3">3 Meses</option>
-            <option value="5">5 Meses</option>
+            <option value="6">6 Meses</option>
             </select>
         </div>
 
