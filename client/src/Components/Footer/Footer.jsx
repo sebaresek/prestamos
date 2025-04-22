@@ -40,7 +40,7 @@ const Footer = () => {
                 <a href="/" className={styles.nav_logo_i}>
                     {/* <img src={pesos} width="23px" 
                     className={styles.nav_logo_i_s}/> */}
-                    <img src={logo} alt="logo" width="300px"/>
+                    <img src={logo} alt="logo" width="250px"/>
                 </a>
             </div>
             <div className={styles.footerBottom}>
