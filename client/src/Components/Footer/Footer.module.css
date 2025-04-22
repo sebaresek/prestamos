@@ -1,0 +1,91 @@
+.footerContainer {
+    /* background-color: #f3f3f3ea; */
+    background-image: linear-gradient(70deg, #293241, #3d5a80);
+    /* background-color: #202020ea;  */
+    /* color: #212121; */
+    color: rgba(255, 255, 255, 0.884);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 2px 2px 4px rgba(41, 41, 43, 0.041);
+}
+
+.footerSection {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    max-width: 250px;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.footerSection h4{
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    /* color: #212121; */
+    color: rgba(255, 255, 255, 0.884);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footerSection a {
+    font-size: 14px;
+    margin: 3px 0;
+    /* color: #212121; */
+    color: rgba(255, 255, 255, 0.884);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footerSection p {
+    font-size: 14px;
+    margin: 0px 0;
+    /* color: #212121; */
+    color: rgba(255, 255, 255, 0.884);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex; /* Usa flexbox en el párrafo */
+    align-items: center; /* Centra verticalmente */
+}
+
+
+.footerSection a:hover {
+    text-decoration: underline;
+}
+
+.footerBottom {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #3f3f3f4b;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.paymentMethods span {
+    margin-right: 10px;
+    color: #212121;
+}
+
+.nav_logo_i{
+    margin-top: 1.5rem;  
+    text-decoration: none;
+    display: block;
+    color: #0a7447f3;
+    font-weight: 400;
+  }
+  .nav_logo_i_s{
+    margin-bottom: 1.7rem;
+  }
+
+  @media (max-width: 575px) {
+
+    .footerSection{
+        margin-bottom: 0px;
+        margin-left: .3rem;
+    }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Georama|Montserrat|Lato|Raleway|Poppins|Assistant|Comfortaa|Blinker|Red+Hat+Display|Outfit|Jost|Ubuntu|Playfair+Display|Source+Sans+Pro|Merriweather&display=swap');
+
+.body {
+    display: flex;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* background-image: linear-gradient(60deg, #2d3d5c, #64ba91); */
+    background-image: linear-gradient(100deg, #293241, #3d5a80);
+}
+
+.container {
+  position: relative;
+  margin-top: 10rem;
+  margin-left: 10%;
+}
+
+.tittle {
+  color: rgba(255, 255, 255, 0.884);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 6rem;
+  line-height: 1;
+  margin-top: 0px;
+  margin-bottom: 3rem;
+}
+
+.text {
+  position: relative;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: hsla(0, 0%, 100%, .7);
+  text-transform: uppercase;
+}
+
+.content { 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%;
+}
+
+.quoter {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+  margin-right: 0px;
+}
+
+
+@media (max-width: 1376px) {
+  .tittle {
+    font-size: 2.5em;
+    margin-left: .5em;
+    margin-top: 4em;
+  }
+
+  .text {
+    margin-left: 1em;
+    font-size: 17px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 1em;
+    margin: 1em;
+    
+  }
+  .cuadrer{
+    top: 32%;
+  }
+}
+
+@media (max-width: 575px) {
+  .body {
+    position: relative;
+    flex-direction: column;
+    /* align-items: center;      */
+  }
+  
+  .tittle {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0em;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+  }
+
+  .container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    align-items: center;     /* Centra horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+  }
+  .quoter{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    font-size: 15px;
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  
+}
+  

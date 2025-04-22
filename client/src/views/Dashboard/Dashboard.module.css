@@ -1,0 +1,32 @@
+.darkMode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.lightMode {
+    background-color: #fafafa;
+    color: #333333;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+.body h1{
+    padding-top: 0px;
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profitMensual {
+    display: flex;
+    justify-content:center;
+    align-items: center; /* Centra verticalmente el componente */
+    padding: 10px; 
+    /* padding-left: 20%; */
+}
+
+.profitEnd{
+    display: flex;
+    justify-content:center;
+    align-items: center; /* Centra verticalmente el componente */
+    padding: 10px; 
+}
