@@ -18,15 +18,14 @@
     padding-bottom: 4rem;
     display: flex;
     overflow: hidden;
+    /* patronAmarriloanaranjado.svgurl(../../../../../patronAmarriloanaranjado.svg) */
 }
 .fondo{
     /* box-shadow: 0 2px 4px rgba(31, 31, 32, 0.726); */
-    background-image: linear-gradient(70deg, #293241, #3d5a80);
-    /* background-image: url('../../Assets/bannerHome.47f5deb32febc5c93be0.svg'); */
-    height: auto;
-    width: auto;
+    /* background-image: linear-gradient(70deg, #293241, #3d5a80); */
+    background-image: url('../../Assets/banner.svg');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     box-shadow: 0 2px 4px rgba(31, 31, 32, 0.726);
     
 }
