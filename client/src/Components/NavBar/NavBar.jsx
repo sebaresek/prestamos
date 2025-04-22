@@ -31,7 +31,7 @@ const NavBar = () => {
                 <a href="/" className={style.nav_logo_i}>
                     {/* <img src={pesos} width="23px" 
                     className={style.nav_logo_i_s}/> */}
-                    <img src={logo} alt="logo" width="250px"/>
+                    <img src={logo} alt="logo" width="200px"/>
                 </a>
             </div>
             <input 
